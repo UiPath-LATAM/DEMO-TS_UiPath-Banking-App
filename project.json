@@ -16,7 +16,7 @@
   "webServices": [],
   "schemaVersion": "4.0",
   "studioVersion": "20.3.0.187",
-  "projectVersion": "2.1.1",
+  "projectVersion": "2.1.2",
   "runtimeOptions": {
     "autoDispose": false,
     "isPausable": true,
@@ -42,37 +42,37 @@
         "fileName": "UiBank Desktop\\Create Customer.xaml"
       },
       {
-        "editingStatus": "InProgress",
+        "editingStatus": "Publishable",
         "testCaseId": "f284e9d6-7eed-478b-9958-0382b5c90ec0",
         "fileName": "UiBank Web\\Standard Loan.xaml"
       },
       {
-        "editingStatus": "InProgress",
+        "editingStatus": "Publishable",
         "testCaseId": "99d93a08-6c71-4faf-8f30-3bbcb09d3852",
         "fileName": "UiBank Web\\Young Age Loan.xaml"
       },
       {
-        "editingStatus": "InProgress",
+        "editingStatus": "Publishable",
         "testCaseId": "f39b809f-866a-4830-8561-6da0ca5211cf",
         "fileName": "UiBank Web\\High Volume Loan.xaml"
       },
       {
-        "editingStatus": "InProgress",
+        "editingStatus": "Publishable",
         "testCaseId": "2925cefc-44bc-4388-b691-53c3c9fb216c",
         "fileName": "UiBank Web\\Short Term Loan.xaml"
       },
       {
-        "editingStatus": "InProgress",
+        "editingStatus": "Publishable",
         "testCaseId": "77ce4d82-a4c2-4377-94be-fcc291237ef4",
         "fileName": "UiBank Web\\Mid Term Loan.xaml"
       },
       {
-        "editingStatus": "InProgress",
+        "editingStatus": "Publishable",
         "testCaseId": "c6284276-61b6-4c61-a956-db933438b8a8",
         "fileName": "UiBank Web\\Long Term Loan.xaml"
       },
       {
-        "editingStatus": "InProgress",
+        "editingStatus": "Publishable",
         "testCaseId": "b3e54544-4714-447a-88f9-f6c7d484f958",
         "fileName": "UiBank Web\\Old Age Loan.xaml"
       },
@@ -82,7 +82,7 @@
         "fileName": "UiBank Desktop\\Create Admin.xaml"
       },
       {
-        "editingStatus": "InProgress",
+        "editingStatus": "Publishable",
         "testCaseId": "4aa2499f-0b98-4ecd-be08-48be55fc03e2",
         "dataVariationFilePath": "UiBank Web\\Variations\\Loan Quotes.json",
         "fileName": "UiBank Web\\Data-Driven Loan.xaml"

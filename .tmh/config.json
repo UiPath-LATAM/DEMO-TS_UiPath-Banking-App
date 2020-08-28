@@ -1,4 +1,14 @@
 {
+  "issueKeyTestcaseValues": {
+    "4aa2499f-0b98-4ecd-be08-48be55fc03e2": "4163442d-c796-43b0-d3b3-08d84b8d5116",
+    "f39b809f-866a-4830-8561-6da0ca5211cf": "d130ef38-c782-41c4-d3b2-08d84b8d5116",
+    "c6284276-61b6-4c61-a956-db933438b8a8": "7601afbd-1afa-403d-d3b4-08d84b8d5116",
+    "77ce4d82-a4c2-4377-94be-fcc291237ef4": "79155a46-399e-4c32-d3b5-08d84b8d5116",
+    "b3e54544-4714-447a-88f9-f6c7d484f958": "283b7188-f63e-43ae-d3b6-08d84b8d5116",
+    "2925cefc-44bc-4388-b691-53c3c9fb216c": "978e322a-8ee9-4628-d3b7-08d84b8d5116",
+    "f284e9d6-7eed-478b-9958-0382b5c90ec0": "13ba1b99-6628-4254-d3b8-08d84b8d5116",
+    "99d93a08-6c71-4faf-8f30-3bbcb09d3852": "9047e45c-259b-48d0-d3b9-08d84b8d5116"
+  },
   "testManagerBasePath": "https://bznoctmdemos.brazilsouth.cloudapp.azure.com:444",
   "testManagerInstanceType": "Server"
 }
