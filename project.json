@@ -487,6 +487,11 @@
         "editingStatus": "InProgress",
         "testCaseId": "1a64fa15-90e8-41ad-ba36-762b29ef639b",
         "fileName": "UiBank Desktop\\Login User.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "6f2d320f-b6a8-4434-8205-cb5ba53bb6de",
+        "fileName": "UiBank Mobile\\Login User - IPHONE.xaml"
       }
     ]
   },
