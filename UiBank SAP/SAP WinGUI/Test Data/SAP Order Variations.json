@@ -1,0 +1,32 @@
+[
+	{
+		"OrderType": "SO",
+		"SalesOrganisation": "1710",
+		"DistributionChannel": "10",
+		"SoldtoParty": "100000038",
+		"ShipToParty": "100000038",
+		"Plant": "1710",
+		"ExpectedNetvalue": "149.00 ",
+		"Materials": "1"
+	},
+	{
+		"OrderType": "TA",
+		"SalesOrganisation": "1710",
+		"DistributionChannel": "10",
+		"SoldtoParty": "100000039",
+		"ShipToParty": "100000039",
+		"Plant": "1710",
+		"ExpectedNetvalue": "747.00 ",
+		"Materials": "2"
+	},
+	{
+		"OrderType": "OR",
+		"SalesOrganisation": "1710",
+		"DistributionChannel": "10",
+		"SoldtoParty": "100000040",
+		"ShipToParty": "100000040",
+		"Plant": "1710",
+		"ExpectedNetvalue": "894.00 ",
+		"Materials": "3"
+	}
+]

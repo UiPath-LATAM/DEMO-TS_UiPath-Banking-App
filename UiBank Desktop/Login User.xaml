@@ -1,0 +1,210 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Test" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="894,857" sap2010:WorkflowViewState.IdRef="Login_User_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ss="clr-namespace:System.Security;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.MobileAutomation</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Test Case" sap:VirtualizedContainerService.HintSize="284,604" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="ss:SecureString" Name="AdminPassword" />
+      <Variable x:TypeArguments="x:String" Name="AdminUsername" />
+      <Variable x:TypeArguments="x:String" Name="UiBankAdmin" />
+      <Variable x:TypeArguments="x:String" Name="UiBankAPI" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="Given" sap:VirtualizedContainerService.HintSize="242,144" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Setup Environment" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="UiBank Environment\Setup Environment.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <OutArgument x:TypeArguments="x:String" x:Key="UiBankAPI">[UiBankAPI]</OutArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="UiBankWeb" />
+          <OutArgument x:TypeArguments="x:String" x:Key="UiBankAdmin">[UiBankAdmin]</OutArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="UiBankMainApp" />
+          <OutArgument x:TypeArguments="x:String" x:Key="UiBankMainFolder" />
+          <OutArgument x:TypeArguments="ss:SecureString" x:Key="AdminPassword">[AdminPassword]</OutArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="AdminUsername">[AdminUsername]</OutArgument>
+          <OutArgument x:TypeArguments="ss:SecureString" x:Key="SuperAdminPassword" />
+        </ui:InvokeWorkflowFile.Arguments>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:InvokeWorkflowFile>
+    </Sequence>
+    <Sequence DisplayName="When" sap:VirtualizedContainerService.HintSize="242,144" sap2010:WorkflowViewState.IdRef="Sequence_3">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Login Admin" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="UiBank Desktop\Libraries\Login Admin.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="UiBankAdmin">[UiBankAdmin]</InArgument>
+          <InArgument x:TypeArguments="ss:SecureString" x:Key="AdminPassword">[AdminPassword]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="AdminUsername">[AdminUsername]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="UiBankAPI">[UiBankAPI]</InArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:InvokeWorkflowFile>
+    </Sequence>
+    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="242,144" sap2010:WorkflowViewState.IdRef="Sequence_4">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard CloseMode="Always" DisplayName="Verify Login" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="IfNotOpen">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="242,146" sap2010:WorkflowViewState.IdRef="Sequence_7">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uta:VerifyControlAttribute ContinueOnFailure="True" DisplayName="Verify Main Logo" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_1" Operator="Equality" OutputArgument="Exists" TakeScreenshotInCaseOfFailingAssertion="True">
+                <uta:VerifyControlAttribute.ActivityToTest>
+                  <ActivityAction>
+                    <uix:NCheckState DisplayName="Get App Logo" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="334,296" sap2010:WorkflowViewState.IdRef="NCheckState_1">
+                      <uix:NCheckState.Exists>
+                        <OutArgument x:TypeArguments="x:Boolean">
+                          <VariableReference x:TypeArguments="x:Boolean">
+                            <VariableReference.Variable>
+                              <Variable x:TypeArguments="x:Boolean" x:Name="__ReferenceID0" Name="Exists" />
+                            </VariableReference.Variable>
+                          </VariableReference>
+                        </OutArgument>
+                      </uix:NCheckState.Exists>
+                      <uix:NCheckState.IfExists>
+                        <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="250,68" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Sequence>
+                      </uix:NCheckState.IfExists>
+                      <uix:NCheckState.IfNotExists>
+                        <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="250,68" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Sequence>
+                      </uix:NCheckState.IfNotExists>
+                      <uix:NCheckState.Target>
+                        <uix:TargetAnchorable DesignTimeRectangle="34, 128, 224, 162" FriendlyName="'WindowsForms10.Window.8…'" FullSelectorArgument="&lt;wnd app='uibankadmin.exe' ctrlname='Form1' /&gt;&lt;wnd ctrlname='pictureBox1' /&gt;" FuzzySelectorArgument="&lt;wnd app='uibankadmin.exe' ctrlname='Form1' /&gt;&lt;wnd ctrlname='pictureBox1' /&gt;" ImageBase64="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" InformativeScreenshot="9808278b73e68c3d443967756f3b84cd.png" SearchSteps="Selector, FuzzySelector" />
+                      </uix:NCheckState.Target>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NCheckState>
+                  </ActivityAction>
+                </uta:VerifyControlAttribute.ActivityToTest>
+                <uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                  <ActivityFunc x:TypeArguments="x:Object">
+                    <uta:ArgumentsBridge sap2010:WorkflowViewState.IdRef="ArgumentsBridge_1">
+                      <uta:ArgumentsBridge.Input>
+                        <InArgument x:TypeArguments="x:Object">
+                          <VariableValue x:TypeArguments="x:Object" Variable="{x:Reference __ReferenceID0}" />
+                        </InArgument>
+                      </uta:ArgumentsBridge.Input>
+                    </uta:ArgumentsBridge>
+                  </ActivityFunc>
+                </uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                <uta:VerifyControlAttribute.Expression>
+                  <InArgument x:TypeArguments="x:Boolean">[True]</InArgument>
+                </uta:VerifyControlAttribute.Expression>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uta:VerifyControlAttribute>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp FilePath="[UiBankAdmin]" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAHYcAAB2HAY/l8WUAAANwSURBVFhH7ZdLKLRhFMfHZdyn3MtCImaHpFw2yKWmFBtZkZrcIiVFUiytFJENVjYWooQFG82ClI3rQkQaSm6lXBqGv/7n63mbad7vMy4fm3nqX9OZ87zn95zzPM97XoPT6cRv6ssALy8vunZv9WmA19dXPD4+4u7uTn7r+XijDwNwxQy4t7eHhoYGVFVVYXV1Vf77DMiHADhubm4wOjqKtLQ0GAwGUUJCAvr6+nB6eio+HymLVwBc2fPzM2w2G8rLyxEUFKQFV/L390deXh5mZ2fx8PDgdTb+CcCVcJycnKC7uxvx8fFawMTERDQ3N6OwsFCCK7vJZILVasXOzo5AvJeNvwJw8v39PaamppCdnQ0/Pz8tiNFoxMTEhMAdHR0hPT1d+08pNTUVw8PDuL6+Fj+9GJQHAImpzc1N1NbWIjw83OPhwcHBmJmZkQdfXV0hNzfXw4ciqMViwcrKipRQryxuAHS4uLjAwMAAkpOTdR+qlJWVhZGREUm33p5wVVxcHDo7O3F8fOxRFgGggTu4t7dXahoYGKj7oK+IJSR0R0cHdnd3tWwIAAdTHhsbqzv5O8Vszc3NSUwNgDSHh4dyxEJDQ3Unfoe4J/Lz87G2tuYOQHGTnJ+fo7+/H8XFxTIhKioK9fX1aGtrQ0pKitgyMjLQ3t6OmpoageURrKyslNQWFBSID2ve1NSE1tZWOa608ST19PTg4OBAYqm4bpuQe4FjfHxcJpnNZtkbT09PqKioEFtLS4v48JwzEFe1sLAgtqGhIfHJzMzE5eWlXEglJSVi6+rqEh/XDUi5AVAcY2NjGoDdbofD4fAA2N7e1gDm5+fFNjg4qAHwNPEeUQA8Be8eQ4rDB+AD8AH4AH4dgN2OAjg7O5O7WwHwfufgK1UBLC4uis31Kmajwra9tLRUbF5dxVzp/v6+9AWclJSUhKWlJWxsbKCoqEhs1dXV2NrawvT0tLys2DuwMSEQV0kfgrMLWl9f17qluro6eX8wKx4NCcVBB9KHhYXJpICAAAkSHR2tdT0hISGIiYlBZGSk1oyyEaVNtW+u85ghNY8LWl5ellgKQgCYYq40JyfHrfn8H+L3xOTkpJSHEAZuDNb8J7ohJWaYHzIsuWSgsbFRUhwREfEjYlddVlaG29vbPwDsB3mUuJt/Qmxg2JY5HA68AUFvy9bnYFIWAAAAAElFTkSuQmCC" InformativeScreenshot="a1c386a1cb9f3828c21fd0f037432506.png" Selector="&lt;wnd app='uibankadmin.exe' ctrlname='Form1'/&gt;" />
+        </uix:NApplicationCard.TargetApp>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </uix:NApplicationCard>
+    </Sequence>
+  </Sequence>
+</Activity>

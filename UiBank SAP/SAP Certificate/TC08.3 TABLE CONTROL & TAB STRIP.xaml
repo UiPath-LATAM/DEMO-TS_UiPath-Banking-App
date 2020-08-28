@@ -1,0 +1,164 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="TC00_Temp" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="883,961" sap2010:WorkflowViewState.IdRef="TC00 Temp_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="443,796" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="process " sap:VirtualizedContainerService.HintSize="401,557" sap2010:WorkflowViewState.IdRef="Sequence_3">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:TypeInto DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" AlterIfDisabled="True" ClickBeforeTyping="False" DisplayName="Type Into 'GuiCTextField  RS38M-PR...'" EmptyField="False" sap:VirtualizedContainerService.HintSize="359,134" sap2010:WorkflowViewState.IdRef="TypeInto_1" SendWindowMessages="False" SimulateType="False" Text="SAPMBIBS">
+        <ui:TypeInto.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="8df6e763ce3d1f1feb8a04fc6f8dc4a6" Selector="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='*' /&gt;&lt;sap id='usr/ctxtRS38M-PROGRAMM' /&gt;" WaitForReady="INTERACTIVE">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+          </ui:Target>
+        </ui:TypeInto.Target>
+      </ui:TypeInto>
+      <ui:SendHotkey DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" Activate="True" ClickBeforeTyping="False" DelayMS="10000" DisplayName="Send Hotkey" EmptyField="False" sap:VirtualizedContainerService.HintSize="359,117" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="f8" KeyModifiers="None" SendWindowMessages="False" SpecialKey="True">
+        <ui:SendHotkey.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" WaitForReady="INTERACTIVE">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+          </ui:Target>
+        </ui:SendHotkey.Target>
+      </ui:SendHotkey>
+      <ui:SelectItem ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" AlterIfDisabled="True" DisplayName="Select Item 'Menubar  mbar'" sap:VirtualizedContainerService.HintSize="359,134" sap2010:WorkflowViewState.IdRef="SelectItem_1" Item="Elements/Table Control/Single Selection Row">
+        <ui:SelectItem.Items>
+          <scg:List x:TypeArguments="x:String" Capacity="50">
+            <x:String>Elements/Value Help Keys</x:String>
+            <x:String>Elements/Dropdown List Box</x:String>
+            <x:String>Dynamics/Messages</x:String>
+            <x:String>Dynamics/Possible Entries Hierarchy</x:String>
+            <x:String>Menu Design/Lists (General)</x:String>
+            <x:String>Menu Design/Overview Lists</x:String>
+            <x:String>Menu Design/Access Characters</x:String>
+            <x:String>System/New GUI Window</x:String>
+            <x:String>System/Close GUI Window</x:String>
+            <x:String>System/Services for Object</x:String>
+            <x:String>System/Own Spool Requests</x:String>
+            <x:String>System/Own Jobs</x:String>
+            <x:String>System/Short Message</x:String>
+            <x:String>System/Status...</x:String>
+            <x:String>System/Log off</x:String>
+            <x:String>Help/Application Help</x:String>
+            <x:String>Help/SAP Library</x:String>
+            <x:String>Help/Glossary</x:String>
+            <x:String>Help/Release Notes</x:String>
+            <x:String>Help/SAP Service Marketplace</x:String>
+            <x:String>Help/Create Support Message</x:String>
+            <x:String>Help/Settings...</x:String>
+            <x:String>Screens/Initial Screen/Regular</x:String>
+            <x:String>Screens/Initial Screen/With Reference</x:String>
+            <x:String>Elements/Radio Buttons/Between Fields</x:String>
+            <x:String>Elements/Radio Buttons/Horizontal in Loop</x:String>
+            <x:String>Elements/Radio Buttons/Vertical in Loop</x:String>
+            <x:String>Elements/Checkboxes/Regular Groups</x:String>
+            <x:String>Elements/Checkboxes/Vertical in Loop</x:String>
+            <x:String>Elements/Table Control/Dynamic Length</x:String>
+            <x:String>Elements/Table Control/Static Length</x:String>
+            <x:String>Elements/Table Control/Overlapping</x:String>
+            <x:String>Elements/Table Control/Very Long</x:String>
+            <x:String>Elements/Table Control/Single Selection Row</x:String>
+            <x:String>Elements/Table Control/Multiple Selection Row</x:String>
+            <x:String>Elements/Table Control/Single Selection Column</x:String>
+            <x:String>Elements/Table Control/Can Have Parameters</x:String>
+            <x:String>Elements/Loops/Dynamic Length</x:String>
+            <x:String>Elements/Loops/Static Length</x:String>
+            <x:String>Elements/Loops/Overlapping</x:String>
+            <x:String>Dynamics/Table Structure/Insert\/Delete Entries</x:String>
+            <x:String>Dynamics/Table Structure/Select</x:String>
+            <x:String>Dynamics/Prompts/Confirmation Prompts</x:String>
+            <x:String>Dynamics/Prompts/Confirmation</x:String>
+            <x:String>Dynamics/Prompts/Decision</x:String>
+            <x:String>Dynamics/Prompts/Only on Input</x:String>
+            <x:String>System/User Profile/Hold Data</x:String>
+            <x:String>System/User Profile/Set Data</x:String>
+            <x:String>System/User Profile/Delete Data</x:String>
+            <x:String>System/User Profile/User Data</x:String>
+          </scg:List>
+        </ui:SelectItem.Items>
+        <ui:SelectItem.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="d4d7c21cb8e6caa218503b3900a82e88" Selector="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' omit:title='User Interface Design: Initial Screen' /&gt;&lt;sap id='mbar' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:SelectItem.Target>
+      </ui:SelectItem>
+    </Sequence>
+    <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" KeyModifiers="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" AlterIfDisabled="True" ClickType="CLICK_SINGLE" DisplayName="Click 'TableRow'" sap:VirtualizedContainerService.HintSize="375.2,107.2" sap2010:WorkflowViewState.IdRef="Click_2" MouseButton="BTN_LEFT">
+      <ui:Click.CursorPosition>
+        <ui:CursorPosition Position="Center">
+          <ui:CursorPosition.OffsetX>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:CursorPosition.OffsetX>
+          <ui:CursorPosition.OffsetY>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:CursorPosition.OffsetY>
+        </ui:CursorPosition>
+      </ui:Click.CursorPosition>
+      <ui:Click.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="d1d34bf6c2a3c0c8aae9d1c15f28e81c" Selector="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Interface Design: Table Control - Single Selection' /&gt;&lt;sap id='usr/tblSAPMBIBSTC537' tableRow='2' /&gt;" WaitForReady="INTERACTIVE">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+        </ui:Target>
+      </ui:Click.Target>
+    </ui:Click>
+  </Sequence>
+</Activity>

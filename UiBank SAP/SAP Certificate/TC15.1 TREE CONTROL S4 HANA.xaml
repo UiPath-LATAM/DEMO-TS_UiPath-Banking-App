@@ -1,0 +1,142 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="_15_1_TREE_CONTROL" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="421,457" sap2010:WorkflowViewState.IdRef="15.1 TREE CONTROL_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ucas="clr-namespace:UiPath.Core.Activities.SAP;assembly=UiPath.UiAutomation.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="401,397" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ucas:ExpandTree ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Expand Tree 'item SE80'" sap:VirtualizedContainerService.HintSize="359,159" sap2010:WorkflowViewState.IdRef="ExpandTree_1" Item="SAP Menu/Tools/ABAP Workbench/Overview/SE80 - Object Navigator">
+      <ucas:ExpandTree.Items>
+        <scg:List x:TypeArguments="x:String" Capacity="50">
+          <x:String>Favorites</x:String>
+          <x:String>Favorites/DemoSet</x:String>
+          <x:String>Favorites/DemoSet/GUIBIBS - BIBS for GUI Tests</x:String>
+          <x:String>Favorites/DemoSet/ABAPDOCU - Display ABAP Documentation</x:String>
+          <x:String>Favorites/DemoSet/SE83 - Reuse Library</x:String>
+          <x:String>Favorites/DemoSet/GRAL - Calling SAP Graphics demos</x:String>
+          <x:String>Favorites/DemoSet/DWDM - Development Workbench Demos</x:String>
+          <x:String>Favorites/DemoSet/BIBS - Examples of User Interface Design</x:String>
+          <x:String>Favorites/\/IWNGW\/BEP_DEMO - Generate demo notifications - DEMO</x:String>
+          <x:String>Favorites/\/UI2\/LOG - UI2 log</x:String>
+          <x:String>Favorites/URL - ### Launchpad Designer ###</x:String>
+          <x:String>Favorites/\/UI2\/FLC - Fiori Launchpad Checks</x:String>
+          <x:String>Favorites/\/SMB\/BBI - Solution Builder</x:String>
+          <x:String>Favorites/\/UI2\/FLPD_CUST - Fiori Lpd. Designer (client-spec.)</x:String>
+          <x:String>Favorites/\/UI2\/FLC1 - Fiori Launchpad Checks</x:String>
+          <x:String>Favorites/\/UI2\/FLPD_CONF - Fiori Lpd. Designer (cross-client)</x:String>
+          <x:String>Favorites/\/IWFND\/MAINT_SERVICE - Activate and Maintain Services</x:String>
+          <x:String>Favorites/\/SMB\/BBI - Solution Builder</x:String>
+          <x:String>Favorites/FI12_HBANK - Change House Banks</x:String>
+          <x:String>Favorites/SLG1 - Application Log: Display Logs</x:String>
+          <x:String>Favorites/OKP1 - Maintain Period Lock</x:String>
+          <x:String>Favorites/Admin</x:String>
+          <x:String>Favorites/Admin/\/IWBEP\/ERROR_LOG - SAP GW Backend Error Log</x:String>
+          <x:String>Favorites/Admin/\/SMB\/BBI - Solution Builder</x:String>
+          <x:String>Favorites/Admin/\/IWFND\/ERROR_LOG - SAP Gateway Error Log</x:String>
+          <x:String>Favorites/Admin/\/IWFND\/MAINT_SERVICE - Activate and Maintain Services</x:String>
+          <x:String>Favorites/Admin/\/UI5\/THEME_DESIGNER - UI Theme Designer</x:String>
+          <x:String>Favorites/Admin/\/IWBEP\/CACHE_CLEANUP - Cleanup of Model Cache</x:String>
+          <x:String>Favorites/Admin/\/SMB\/BBI - Solution Builder</x:String>
+          <x:String>Favorites/Admin/\/IWFND\/CACHE_CLEANUP - Cleanup of Model Cache</x:String>
+          <x:String>Favorites/Admin/LPD_CUST - Launchpad customizing</x:String>
+          <x:String>SAP Menu</x:String>
+          <x:String>SAP Menu/Financial Services Network Connector</x:String>
+          <x:String>SAP Menu/Office</x:String>
+          <x:String>SAP Menu/Office/SBWP - Workplace</x:String>
+          <x:String>SAP Menu/Office/Telephone Integration</x:String>
+          <x:String>SAP Menu/Office/Telephone Integration/SPHD - Own Telephone Number</x:String>
+          <x:String>SAP Menu/Office/Telephone Integration/SPHA - Extended Settings</x:String>
+          <x:String>SAP Menu/Office/Appointment Calendar</x:String>
+          <x:String>SAP Menu/Office/Appointment Calendar/SSC1 - Owner</x:String>
+          <x:String>SAP Menu/Office/Appointment Calendar/SSC0 - Employee</x:String>
+          <x:String>SAP Menu/Office/Room Reservations</x:String>
+          <x:String>SAP Menu/Office/Room Reservations/PP30 - Reservation</x:String>
+          <x:String>SAP Menu/Office/Room Reservations/PP32 - Services</x:String>
+          <x:String>SAP Menu/Office/SWUI - Start Workflow</x:String>
+          <x:String>SAP Menu/Office/Business Documents</x:String>
+          <x:String>SAP Menu/Office/Business Documents/Documents</x:String>
+          <x:String>SAP Menu/Office/Business Documents/Documents/OAWD - Check In</x:String>
+          <x:String>SAP Menu/Office/Business Documents/Documents/OAOR - Find</x:String>
+          <x:String>SAP Menu/Office/Business Documents/OADR - Find Lists</x:String>
+        </scg:List>
+      </ucas:ExpandTree.Items>
+      <ucas:ExpandTree.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="714c2debcea8d76f58bfa0e06754fe6d" Selector="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='SAP Easy Access' /&gt;&lt;sap id='usr/cntlIMAGE_CONTAINER/shellcont/shell/shellcont[0]/shell' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ucas:ExpandTree.Target>
+    </ucas:ExpandTree>
+    <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_DOUBLE" DisplayName="Double Click" sap:VirtualizedContainerService.HintSize="359,106" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+      <ui:Click.CursorPosition>
+        <ui:CursorPosition Position="Center">
+          <ui:CursorPosition.OffsetX>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:CursorPosition.OffsetX>
+          <ui:CursorPosition.OffsetY>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:CursorPosition.OffsetY>
+        </ui:CursorPosition>
+      </ui:Click.CursorPosition>
+      <ui:Click.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="5eb419644d860b87574c362253d6ddf3" Selector="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='SAP Easy Access' /&gt;&lt;sap id='usr/cntlIMAGE_CONTAINER/shellcont/shell/shellcont[0]/shell' relpath='SAP Menu/Tools/ABAP Workbench/Overview/SE80 - Object Navigator' /&gt;&lt;sap itemId='1' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:Click.Target>
+    </ui:Click>
+  </Sequence>
+</Activity>

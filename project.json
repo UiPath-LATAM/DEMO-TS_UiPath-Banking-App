@@ -1,0 +1,597 @@
+{
+  "name": "UiPath Banking App",
+  "description": "A demo library to demonstate automation in different kind of application and technologies",
+  "main": "UiBank Web\\Standard Loan.xaml",
+  "dependencies": {
+    "Faker.Data": "[2.0.0]",
+    "UiBank.Postman.Collections": "[1.0.4]",
+    "UiPath.Excel.Activities": "[2.8.6]",
+    "UiPath.MobileAutomation.Activities": "[20.4.1]",
+    "UiPath.System.Activities": "[20.4.0]",
+    "UiPath.Testing.Activities": "[1.1.3]",
+    "UiPath.UIAutomation.Activities": "[20.4.1]",
+    "UiPath.UIAutomationNext.Activities": "[20.4.1]",
+    "UiPath.WebAPI.Activities": "[1.4.5]"
+  },
+  "webServices": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "20.3.0.187",
+  "projectVersion": "2.1.1",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "isPausable": true,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Tests",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "fileInfoCollection": [
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "c779bd9b-457a-4a3c-bc60-fbc8eeadd6ad",
+        "fileName": "UiBank Desktop\\Create Customer.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "f284e9d6-7eed-478b-9958-0382b5c90ec0",
+        "fileName": "UiBank Web\\Standard Loan.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "99d93a08-6c71-4faf-8f30-3bbcb09d3852",
+        "fileName": "UiBank Web\\Young Age Loan.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "f39b809f-866a-4830-8561-6da0ca5211cf",
+        "fileName": "UiBank Web\\High Volume Loan.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "2925cefc-44bc-4388-b691-53c3c9fb216c",
+        "fileName": "UiBank Web\\Short Term Loan.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "77ce4d82-a4c2-4377-94be-fcc291237ef4",
+        "fileName": "UiBank Web\\Mid Term Loan.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "c6284276-61b6-4c61-a956-db933438b8a8",
+        "fileName": "UiBank Web\\Long Term Loan.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "b3e54544-4714-447a-88f9-f6c7d484f958",
+        "fileName": "UiBank Web\\Old Age Loan.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "f2af087b-a280-4eff-827b-58c006b4a1a6",
+        "fileName": "UiBank Desktop\\Create Admin.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "4aa2499f-0b98-4ecd-be08-48be55fc03e2",
+        "dataVariationFilePath": "UiBank Web\\Variations\\Loan Quotes.json",
+        "fileName": "UiBank Web\\Data-Driven Loan.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "4c07518e-63bf-4297-b8b3-4cfce097d62d",
+        "fileName": "UiBank Mobile\\Login User.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "0e70d834-3bd7-461e-9615-e8bb14abeaf6",
+        "fileName": "UiBank API\\High Volume Loan.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "ebf8dc3c-0d22-4d77-a2af-3ddae912a196",
+        "fileName": "UiBank API\\Long Term Loan.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "beb5384f-929d-4e48-a534-4fa908af3f16",
+        "fileName": "UiBank API\\Lookup Loan.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "88e09ddb-8286-4089-bf6d-c0b9469e3c2d",
+        "fileName": "UiBank RPA\\Test Cases\\High-Volume & Long-Term Loan.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "42c3ce98-9780-495c-a780-865e8b82005f",
+        "fileName": "UiBank RPA\\Test Cases\\High-Volume & Short-Term Loan.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "03874df8-379d-4400-88a5-6f6fb99446f9",
+        "fileName": "UiBank RPA\\Test Cases\\Low-Volume & Long-Term Loan.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "8eb2de56-2e4d-4ca7-ad07-07403a535dfb",
+        "fileName": "UiBank RPA\\Test Cases\\Low-Volume & Short-Term Loan.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "0b2e2388-1cd7-4d89-93bc-43b6473ce62c",
+        "fileName": "UiBank RPA\\Test Cases\\Mid-Volume & Long-Term Loan.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "1c9f3941-654d-48f8-a332-22d34a808be2",
+        "fileName": "UiBank RPA\\Test Cases\\Mid-Volume & Short-Term Loan.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "d1cdf7ef-1d09-4962-b06a-25a4103dcb5f",
+        "fileName": "UiBank CICD\\Create Account.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "68a90342-9872-4287-a597-51ab136907cb",
+        "fileName": "UiBank CICD\\Create Loan.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "14b68811-9f40-432f-a03d-117464ee5557",
+        "fileName": "UiBank CICD\\Create User.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "66b348ac-8371-4376-b7b8-79b525f72438",
+        "fileName": "UiBank CICD\\Modify User Profile.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "02ad4e6c-e0a6-4592-a896-71e7ae6af8a7",
+        "fileName": "UiBank CICD\\Perform Transaction.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "4ec192a0-6307-4595-8054-6d625d03b0a2",
+        "fileName": "UiBank CICD\\Register Administrator.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "aca1bcae-33d3-4619-ade0-a0401804b993",
+        "fileName": "UiBank CICD\\Reset Password.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "4a16110e-43a1-4b5c-aea2-380c12a26e57",
+        "fileName": "UiBank CICD\\Transfer Funds.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "847c8275-fa0b-4c4f-a8a5-603c2d158e1c",
+        "dataVariationFilePath": "UiBank SAP\\SAP WinGUI\\Test Data\\SAP Order Variations.json",
+        "fileName": "UiBank SAP\\SAP WinGUI\\Test Cases\\Create Data-Driven Order.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "95efe69d-4739-4788-bdcd-747c65342399",
+        "fileName": "UiBank SAP\\SAP WinGUI\\Test Cases\\Create Standard Order.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "39f5ac8d-332c-404c-8362-1e2b1fe607e9",
+        "fileName": "UiBank SAP\\SAP Certificate\\TC01 SAP WINGUI LOGON.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "dcbc1bf4-fda0-4c01-8512-f30b654d594d",
+        "fileName": "UiBank SAP\\SAP Certificate\\TC02 OK CODE FIELD CHECKBOX.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "4ac997c2-486b-40cf-a332-d257abe03749",
+        "fileName": "UiBank SAP\\SAP Certificate\\TC03 DROPDOWN LISTS.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "dad04ab4-8dc8-4937-ba92-490f8054e5b8",
+        "fileName": "UiBank SAP\\SAP Certificate\\TC04 PUSH BUTTONS.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "fe63f9ab-5e60-48b9-abb7-ecbdfa66dad5",
+        "fileName": "UiBank SAP\\SAP Certificate\\TC05 RADIO BUTTONS.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "fabebec0-9865-4d78-b9b8-b515592b0358",
+        "fileName": "UiBank SAP\\SAP Certificate\\TC06 ICONS.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "00b9cf5c-8981-44ee-bffb-5476916c54ad",
+        "fileName": "UiBank SAP\\SAP Certificate\\TC07 FLUSHING RADIO BUTTONS.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "ecee3395-6dc9-4336-a3b8-8c926dbda56a",
+        "fileName": "UiBank SAP\\SAP Certificate\\TC08.1 TABLE CONTROL & TAB STRIP.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "68b08b15-0f73-4791-8f14-427efa55c726",
+        "fileName": "UiBank SAP\\SAP Certificate\\TC08.2 TABLE CONTROL & TAB STRIP.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "4b7b1d0d-d784-4635-a953-5f1a8db70413",
+        "fileName": "UiBank SAP\\SAP Certificate\\TC08.3 TABLE CONTROL & TAB STRIP.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "fb6f9010-6dac-4f54-a873-da8e5ea584c0",
+        "fileName": "UiBank SAP\\SAP Certificate\\TC08.4 TABLE CONTROL & TAB STRIP.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "a4b6041a-9a71-4076-b058-44d8716fbd60",
+        "fileName": "UiBank SAP\\SAP Certificate\\TC08.5 TABLE CONTROL & TAB STRIP.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "35614dea-aa6f-43bc-aadc-a0eb1601a158",
+        "fileName": "UiBank SAP\\SAP Certificate\\TC09 F4 EDIT.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "07fa78f6-d86c-4e04-b175-63a835977a05",
+        "fileName": "UiBank SAP\\SAP Certificate\\TC10.1 DIALOG BOX.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "d2eaedb9-ca85-4345-a0f8-3cefa9f6cb20",
+        "fileName": "UiBank SAP\\SAP Certificate\\TC10.2 DIALOG BOX.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "9f9bb43b-37ff-4f7a-8933-cab3e5a75acc",
+        "fileName": "UiBank SAP\\SAP Certificate\\TC11 ABAP LIST.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "d0179450-5e74-40c1-9954-fe6da445e65e",
+        "fileName": "UiBank SAP\\SAP Certificate\\TC12.1 STATUS BAR, MESSAGES.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "e13d5606-928b-4ed0-93b8-e59d53815aad",
+        "fileName": "UiBank SAP\\SAP Certificate\\TC12.2 STATUS BAR, MESSAGES.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "446f736d-0554-40ba-95bf-e538e1ac3d9c",
+        "fileName": "UiBank SAP\\SAP Certificate\\TC13. STEP LOOP.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "9cd0cb75-000d-48d0-9200-d6e4484c4fc7",
+        "fileName": "UiBank SAP\\SAP Certificate\\TC14.1 GRIDVIEW CONTROL.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "c7ebbda1-1d51-418a-901f-5f3f882740e0",
+        "fileName": "UiBank SAP\\SAP Certificate\\TC14.2 GRIDVIEW CONTROL.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "317b395f-9a35-4559-a9a6-558e64061987",
+        "fileName": "UiBank SAP\\SAP Certificate\\TC14.3 GRIDVIEW CONTROL ECC.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "3f682f72-aa16-4696-9d7f-6ea267b17186",
+        "fileName": "UiBank SAP\\SAP Certificate\\TC14.3 GRIDVIEW CONTROL S4 HANA.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "cd38cf62-460d-402b-a151-a8a6615416cb",
+        "fileName": "UiBank SAP\\SAP Certificate\\TC14.4 GRIDVIEW CONTROL.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "b3013782-08ab-47a7-b2ab-092df836bd91",
+        "fileName": "UiBank SAP\\SAP Certificate\\TC15.1 TREE CONTROL ECC.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "4d5ed828-f97a-4208-bea2-a12032f4a004",
+        "fileName": "UiBank SAP\\SAP Certificate\\TC15.1 TREE CONTROL S4 HANA.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "6fa1ad58-30f9-4e7f-8031-4824b6cfecc9",
+        "fileName": "UiBank SAP\\SAP Certificate\\TC15.2 TREE CONTROL.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "e5772ec1-9f03-4d15-90c8-d907a35356a5",
+        "fileName": "UiBank SAP\\SAP Certificate\\TC15.3 TREE CONTROL.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "4ee728e7-2b4c-4ea5-a8bc-b36a936877a3",
+        "fileName": "UiBank SAP\\SAP Certificate\\TC15.4 TREE CONTROL.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "4cf4e080-609d-4b03-a4c6-58944390e7e6",
+        "fileName": "UiBank SAP\\SAP Certificate\\TC15.5 TREE CONTROL.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "4483e57a-2f0c-4577-b209-e51f0dd934e1",
+        "fileName": "UiBank SAP\\SAP Certificate\\TC15.6 TREE CONTROL.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "2183ca57-f235-4485-a987-196218fb2c16",
+        "fileName": "UiBank SAP\\SAP Certificate\\TC16.1 TEXTEDIT CONTROL.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "eab874d1-1d02-41cc-9469-343dd4b5287c",
+        "fileName": "UiBank SAP\\SAP Certificate\\TC16.2 TEXTEDIT CONTROL.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "e6197a26-a4a4-4d30-985b-307397d212d5",
+        "fileName": "UiBank SAP\\SAP Certificate\\TC17.1 HTML CONTROL IN ALV.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "b9424b03-f157-4c03-9c6f-cb7189bc40a8",
+        "fileName": "UiBank SAP\\SAP Certificate\\TC17.2 HTML CONTROL IN ALV.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "6f467714-f083-47dd-a0fb-b4dcd9bf268c",
+        "fileName": "UiBank SAP\\SAP Certificate\\TC18. PICTURE CONTROL, APPLICATION TOOLBAR.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "7e7a6cb5-a61e-407d-b72e-88ddcaae4cb4",
+        "fileName": "UiBank SAP\\SAP Certificate\\TC19. CALENDAR CONTROL.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "e679328d-a7bb-41f5-af00-15356c6a161d",
+        "fileName": "UiBank SAP\\SAP Certificate\\TC20.1 TOOLBAR CONTROL.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "0415bdaa-1e63-4018-8c41-3982cb91a85d",
+        "fileName": "UiBank SAP\\SAP Certificate\\TC20.2 TOOLBAR CONTROL.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "0eb87830-f69f-4fc7-b7a5-6605d8f1a77f",
+        "fileName": "UiBank SAP\\SAP Certificate\\TC21 DIALOG CONTROL ECC.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "386388db-d863-4205-bb6f-0a73ae563dee",
+        "fileName": "UiBank SAP\\SAP Certificate\\TC21 DIALOG CONTROL S4 HANA.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "922f4f34-96b8-4377-9267-6cdb2fc11536",
+        "fileName": "UiBank SAP\\SAP Certificate\\TC22 CHECKPOINTS.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "ef3e3a0f-daf9-43df-ba0a-7166293372f3",
+        "fileName": "UiBank SAP\\SAP Certificate\\TC23 CONTEXT MENU ECC.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "1f662d00-2c7f-4c2c-95df-82c5645f2dca",
+        "fileName": "UiBank SAP\\SAP Certificate\\TC23 CONTEXT MENU S4 HANA.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "f62608b7-4d41-4f0c-bf89-1adb18feafe8",
+        "fileName": "UiBank SAP\\SAP Certificate\\TC24 SYSTEM TOOLBAR.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "33a6159e-7d63-4d18-8989-492c85aea4bc",
+        "fileName": "UiBank SAP\\SAP Certificate\\TC25 GENERIC OBJECT SERVICES CONTROLS.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "e4bce2ce-07d4-4bbe-83f8-4608cce1f729",
+        "fileName": "UiBank SAP\\SAP Fiori\\Purchase Item.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "a69a8eea-196a-4dbd-802a-57449ce337e2",
+        "fileName": "UiBank Desktop\\Verify Overdraft Rate.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "6edc474c-452a-49fb-8e98-f0f6540ead40",
+        "fileName": "UiBank Mainframe\\Modify Birthdate.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "22a604c6-2933-44f2-99a8-dfda8466455b",
+        "fileName": "UiBank ALM\\High Volume Loan.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "b85f5c56-f667-4af6-b162-e48c9bde9299",
+        "fileName": "UiBank ALM\\Long Term Loan.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "9e59e264-289f-4fc3-8145-366ffdfe001d",
+        "fileName": "UiBank ALM\\Mid Term Loan.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "fda9e97f-d75c-42b3-8eef-c3bac5df1500",
+        "fileName": "UiBank ALM\\Old Age Loan.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "3fd5b6d5-196e-4f44-852c-73d5318b5334",
+        "fileName": "UiBank ALM\\Short Term Loan.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "02b3f0a0-8d8e-4051-a52f-ef4b835d7986",
+        "fileName": "UiBank ALM\\Young Age Loan.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "1fdcf6c9-e4e4-4500-b5e3-a70c16afb51e",
+        "fileName": "UiBank ALM\\High Income Loan.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "1edfba0c-f861-4404-beb7-0cd3a2021c13",
+        "fileName": "UiBank ALM\\Low Income Loan.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "ec331604-8864-410c-9421-d4c2bae8e77d",
+        "fileName": "UiBank ALM\\Mid Volume Loan.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "34965f93-e429-457e-b861-0ae3fe132013",
+        "fileName": "UiBank ALM\\Low Volume Loan.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "1a64fa15-90e8-41ad-ba36-762b29ef639b",
+        "fileName": "UiBank Desktop\\Login User.xaml"
+      }
+    ]
+  },
+  "arguments": {
+    "input": [],
+    "output": []
+  },
+  "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "UiBank Web\\Standard Loan.xaml",
+      "uniqueId": "f284e9d6-7eed-478b-9958-0382b5c90ec0",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "UiBank Web\\Young Age Loan.xaml",
+      "uniqueId": "99d93a08-6c71-4faf-8f30-3bbcb09d3852",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "UiBank Web\\High Volume Loan.xaml",
+      "uniqueId": "f39b809f-866a-4830-8561-6da0ca5211cf",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "UiBank Web\\Short Term Loan.xaml",
+      "uniqueId": "2925cefc-44bc-4388-b691-53c3c9fb216c",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "UiBank Web\\Mid Term Loan.xaml",
+      "uniqueId": "77ce4d82-a4c2-4377-94be-fcc291237ef4",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "UiBank Web\\Long Term Loan.xaml",
+      "uniqueId": "c6284276-61b6-4c61-a956-db933438b8a8",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "UiBank Web\\Old Age Loan.xaml",
+      "uniqueId": "b3e54544-4714-447a-88f9-f6c7d484f958",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "UiBank Web\\Data-Driven Loan.xaml",
+      "uniqueId": "4aa2499f-0b98-4ecd-be08-48be55fc03e2",
+      "input": [
+        {
+          "name": "LoanEmail",
+          "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "required": false,
+          "hasDefault": true
+        },
+        {
+          "name": "LoanAmount",
+          "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "required": false,
+          "hasDefault": true
+        },
+        {
+          "name": "LoanTerm",
+          "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "required": false,
+          "hasDefault": true
+        },
+        {
+          "name": "LoanIncome",
+          "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "required": false,
+          "hasDefault": true
+        },
+        {
+          "name": "LoanAge",
+          "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "required": false,
+          "hasDefault": true
+        },
+        {
+          "name": "LoanGranted",
+          "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "required": false,
+          "hasDefault": true
+        },
+        {
+          "name": "LoanRate",
+          "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "required": false,
+          "hasDefault": false
+        },
+        {
+          "name": "UiBankWeb",
+          "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "required": false,
+          "hasDefault": false
+        }
+      ],
+      "output": []
+    }
+  ]
+}

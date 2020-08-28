@@ -1,0 +1,7 @@
+Application Server : 18.209.242.206
+Instance Number : 00
+System ID/ SID : S4H
+
+
+user name S4H_SD
+password : Welcome1
