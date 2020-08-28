@@ -1,0 +1,4 @@
+{
+  "testManagerBasePath": "https://bznoctmdemos.brazilsouth.cloudapp.azure.com:444",
+  "testManagerInstanceType": "Server"
+}
