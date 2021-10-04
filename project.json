@@ -5,15 +5,16 @@
   "dependencies": {
     "Faker.Data": "[2.0.0]",
     "UiBank.Postman.Collections": "[1.0.4]",
-    "UiPath.Excel.Activities": "[2.8.6]",
-    "UiPath.MobileAutomation.Activities": "[20.4.1]",
-    "UiPath.System.Activities": "[20.4.0]",
-    "UiPath.Testing.Activities": "[1.1.3]",
-    "UiPath.UIAutomation.Activities": "[20.4.1]",
-    "UiPath.UIAutomationNext.Activities": "[20.4.1]",
-    "UiPath.WebAPI.Activities": "[1.4.5]"
+    "UiPath.Excel.Activities": "[2.10.4]",
+    "UiPath.MobileAutomation.Activities": "[21.4.3]",
+    "UiPath.Python.Activities": "[1.3.0]",
+    "UiPath.System.Activities": "[21.4.1]",
+    "UiPath.Testing.Activities": "[1.3.3]",
+    "UiPath.UIAutomation.Activities": "[21.4.4]",
+    "UiPath.WebAPI.Activities": "[1.7.0]"
   },
   "webServices": [],
+  "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "20.3.0.187",
   "projectVersion": "2.1.2",
@@ -26,7 +27,9 @@
       "Private:*",
       "*password*"
     ],
-    "executionType": "Workflow"
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false
   },
   "designOptions": {
     "projectProfile": "Developement",
@@ -34,6 +37,9 @@
     "libraryOptions": {
       "includeOriginalXaml": false,
       "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
     },
     "fileInfoCollection": [
       {
@@ -435,56 +441,6 @@
       },
       {
         "editingStatus": "InProgress",
-        "testCaseId": "22a604c6-2933-44f2-99a8-dfda8466455b",
-        "fileName": "UiBank ALM\\High Volume Loan.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
-        "testCaseId": "b85f5c56-f667-4af6-b162-e48c9bde9299",
-        "fileName": "UiBank ALM\\Long Term Loan.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
-        "testCaseId": "9e59e264-289f-4fc3-8145-366ffdfe001d",
-        "fileName": "UiBank ALM\\Mid Term Loan.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
-        "testCaseId": "fda9e97f-d75c-42b3-8eef-c3bac5df1500",
-        "fileName": "UiBank ALM\\Old Age Loan.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
-        "testCaseId": "3fd5b6d5-196e-4f44-852c-73d5318b5334",
-        "fileName": "UiBank ALM\\Short Term Loan.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
-        "testCaseId": "02b3f0a0-8d8e-4051-a52f-ef4b835d7986",
-        "fileName": "UiBank ALM\\Young Age Loan.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
-        "testCaseId": "1fdcf6c9-e4e4-4500-b5e3-a70c16afb51e",
-        "fileName": "UiBank ALM\\High Income Loan.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
-        "testCaseId": "1edfba0c-f861-4404-beb7-0cd3a2021c13",
-        "fileName": "UiBank ALM\\Low Income Loan.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
-        "testCaseId": "ec331604-8864-410c-9421-d4c2bae8e77d",
-        "fileName": "UiBank ALM\\Mid Volume Loan.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
-        "testCaseId": "34965f93-e429-457e-b861-0ae3fe132013",
-        "fileName": "UiBank ALM\\Low Volume Loan.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
         "testCaseId": "1a64fa15-90e8-41ad-ba36-762b29ef639b",
         "fileName": "UiBank Desktop\\Login User.xaml"
       },
@@ -493,7 +449,8 @@
         "testCaseId": "6f2d320f-b6a8-4434-8205-cb5ba53bb6de",
         "fileName": "UiBank Mobile\\Login User - IPHONE.xaml"
       }
-    ]
+    ],
+    "modernBehavior": false
   },
   "arguments": {
     "input": [],
@@ -598,5 +555,9 @@
       ],
       "output": []
     }
-  ]
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Legacy"
 }
