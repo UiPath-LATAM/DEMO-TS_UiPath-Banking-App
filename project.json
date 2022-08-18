@@ -5,22 +5,23 @@
   "dependencies": {
     "Faker.Data": "[2.0.0]",
     "UiBank.Postman.Collections": "[1.0.4]",
-    "UiPath.Excel.Activities": "[2.10.4]",
-    "UiPath.MobileAutomation.Activities": "[21.4.3]",
-    "UiPath.Python.Activities": "[1.3.0]",
-    "UiPath.System.Activities": "[21.4.1]",
-    "UiPath.Testing.Activities": "[1.3.3]",
-    "UiPath.UIAutomation.Activities": "[21.4.4]",
-    "UiPath.WebAPI.Activities": "[1.7.0]"
+    "UiPath.Excel.Activities": "[2.11.4]",
+    "UiPath.MobileAutomation.Activities": "[21.10.2]",
+    "UiPath.Python.Activities": "[1.4.1]",
+    "UiPath.System.Activities": "[21.10.3]",
+    "UiPath.Testing.Activities": "[1.4.4]",
+    "UiPath.UIAutomation.Activities": "[21.10.4]",
+    "UiPath.WebAPI.Activities": "[1.9.2]"
   },
   "webServices": [],
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "20.3.0.187",
-  "projectVersion": "2.1.2",
+  "projectVersion": "2.2.0",
   "runtimeOptions": {
     "autoDispose": false,
     "isPausable": true,
+    "isAttended": false,
     "requiresUserInteraction": true,
     "supportsPersistence": false,
     "excludedLoggedData": [
@@ -29,7 +30,8 @@
     ],
     "executionType": "Workflow",
     "readyForPiP": false,
-    "startsInPiP": false
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": false
   },
   "designOptions": {
     "projectProfile": "Developement",
@@ -48,12 +50,12 @@
         "fileName": "UiBank Desktop\\Create Customer.xaml"
       },
       {
-        "editingStatus": "Publishable",
+        "editingStatus": "InProgress",
         "testCaseId": "f284e9d6-7eed-478b-9958-0382b5c90ec0",
         "fileName": "UiBank Web\\Standard Loan.xaml"
       },
       {
-        "editingStatus": "Publishable",
+        "editingStatus": "InProgress",
         "testCaseId": "99d93a08-6c71-4faf-8f30-3bbcb09d3852",
         "fileName": "UiBank Web\\Young Age Loan.xaml"
       },
@@ -63,12 +65,12 @@
         "fileName": "UiBank Web\\High Volume Loan.xaml"
       },
       {
-        "editingStatus": "Publishable",
+        "editingStatus": "InProgress",
         "testCaseId": "2925cefc-44bc-4388-b691-53c3c9fb216c",
         "fileName": "UiBank Web\\Short Term Loan.xaml"
       },
       {
-        "editingStatus": "Publishable",
+        "editingStatus": "InProgress",
         "testCaseId": "77ce4d82-a4c2-4377-94be-fcc291237ef4",
         "fileName": "UiBank Web\\Mid Term Loan.xaml"
       },
@@ -78,7 +80,7 @@
         "fileName": "UiBank Web\\Long Term Loan.xaml"
       },
       {
-        "editingStatus": "Publishable",
+        "editingStatus": "InProgress",
         "testCaseId": "b3e54544-4714-447a-88f9-f6c7d484f958",
         "fileName": "UiBank Web\\Old Age Loan.xaml"
       },
@@ -88,7 +90,7 @@
         "fileName": "UiBank Desktop\\Create Admin.xaml"
       },
       {
-        "editingStatus": "Publishable",
+        "editingStatus": "InProgress",
         "testCaseId": "4aa2499f-0b98-4ecd-be08-48be55fc03e2",
         "dataVariationFilePath": "UiBank Web\\Variations\\Loan Quotes.json",
         "fileName": "UiBank Web\\Data-Driven Loan.xaml"
@@ -459,32 +461,8 @@
   "expressionLanguage": "VisualBasic",
   "entryPoints": [
     {
-      "filePath": "UiBank Web\\Standard Loan.xaml",
-      "uniqueId": "f284e9d6-7eed-478b-9958-0382b5c90ec0",
-      "input": [],
-      "output": []
-    },
-    {
-      "filePath": "UiBank Web\\Young Age Loan.xaml",
-      "uniqueId": "99d93a08-6c71-4faf-8f30-3bbcb09d3852",
-      "input": [],
-      "output": []
-    },
-    {
       "filePath": "UiBank Web\\High Volume Loan.xaml",
       "uniqueId": "f39b809f-866a-4830-8561-6da0ca5211cf",
-      "input": [],
-      "output": []
-    },
-    {
-      "filePath": "UiBank Web\\Short Term Loan.xaml",
-      "uniqueId": "2925cefc-44bc-4388-b691-53c3c9fb216c",
-      "input": [],
-      "output": []
-    },
-    {
-      "filePath": "UiBank Web\\Mid Term Loan.xaml",
-      "uniqueId": "77ce4d82-a4c2-4377-94be-fcc291237ef4",
       "input": [],
       "output": []
     },
@@ -492,67 +470,6 @@
       "filePath": "UiBank Web\\Long Term Loan.xaml",
       "uniqueId": "c6284276-61b6-4c61-a956-db933438b8a8",
       "input": [],
-      "output": []
-    },
-    {
-      "filePath": "UiBank Web\\Old Age Loan.xaml",
-      "uniqueId": "b3e54544-4714-447a-88f9-f6c7d484f958",
-      "input": [],
-      "output": []
-    },
-    {
-      "filePath": "UiBank Web\\Data-Driven Loan.xaml",
-      "uniqueId": "4aa2499f-0b98-4ecd-be08-48be55fc03e2",
-      "input": [
-        {
-          "name": "LoanEmail",
-          "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
-          "required": false,
-          "hasDefault": true
-        },
-        {
-          "name": "LoanAmount",
-          "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
-          "required": false,
-          "hasDefault": true
-        },
-        {
-          "name": "LoanTerm",
-          "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
-          "required": false,
-          "hasDefault": true
-        },
-        {
-          "name": "LoanIncome",
-          "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
-          "required": false,
-          "hasDefault": true
-        },
-        {
-          "name": "LoanAge",
-          "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
-          "required": false,
-          "hasDefault": true
-        },
-        {
-          "name": "LoanGranted",
-          "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
-          "required": false,
-          "hasDefault": true
-        },
-        {
-          "name": "LoanRate",
-          "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
-          "required": false,
-          "hasDefault": false
-        },
-        {
-          "name": "UiBankWeb",
-          "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
-          "required": false,
-          "hasDefault": false
-        }
-      ],
       "output": []
     }
   ],

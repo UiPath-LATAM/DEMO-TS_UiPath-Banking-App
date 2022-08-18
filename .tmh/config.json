@@ -9,6 +9,10 @@
     "f284e9d6-7eed-478b-9958-0382b5c90ec0": "13ba1b99-6628-4254-d3b8-08d84b8d5116",
     "99d93a08-6c71-4faf-8f30-3bbcb09d3852": "9047e45c-259b-48d0-d3b9-08d84b8d5116"
   },
-  "testManagerBasePath": "https://bznoctmdemos.brazilsouth.cloudapp.azure.com:444",
-  "testManagerInstanceType": "Server"
+  "testManagerBasePath": "https://staging.uipath.com/bznstg/bzndemos/testmanager_",
+  "defaultProject": {
+    "id": "c257675e-1101-0000-9a32-0b430770ff6f",
+    "name": "Loan-Process",
+    "key": "TLP"
+  }
 }
